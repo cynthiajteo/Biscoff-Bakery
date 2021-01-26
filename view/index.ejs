@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of Baking Goods!</h1>
+
+    <ul>
+        <% for(let i=0; i<bakeList.length; i++) { %>
+            <li>
+                <a href="/bakegoods/<%=i%>">
+                <%= bakeList[i].name.charAt(0).toUpperCase()+bakeList[i].name.slice(1) %>
+                </a>
+            </li>
+        <% } %>
+    </ul>
+
+
+    <p><a href="/create">Add New Baked Goods</a></p>
+</body>
+</html>
