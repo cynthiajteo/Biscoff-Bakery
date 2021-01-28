@@ -1,10 +1,10 @@
-const bakeGoods = require('../controller/controller.js');
+const bakedGoods = require('../controller/controller.js');
 
 module.exports = (app) => {
-    app.get('/', bakeGoods.showWelcome);
-    app.get('/bakelist', bakeGoods.showList);
-    app.get('/bakegoods/:id', bakeGoods.displayList);
-    app.get('/create', bakeGoods.createPost); //display form only
-    app.post('/create', bakeGoods.postData);
+    app.get('/', bakedGoods.showWelcome);
+    app.get('/bakedgoods', bakedGoods.showList);
+    app.get('/bakedgoods/:id', bakedGoods.displayList);
+    app.get('/create', bakedGoods.createPost); //display form only
+    app.post('/create', bakedGoods.postData);
     //another page route to push the data to the body
 };

@@ -4,7 +4,7 @@ const html = `
 <html>
     <body>
         <h1>Welcome to Biscoff Bakery</h1>
-        <a href="/bakelist/">List of Baked Goods</a>
+        <a href="/bakedgoods/">List of Baked Goods</a>
     </body>
 </html>
 `;
@@ -15,13 +15,13 @@ const showWelcome = (req, res) => {
 
 const showList = (req, res) => {
     res.render('../view/index.ejs', {
-        bakeList: bakedGoods,
+        bakedGoods: bakedGoods,
     });
 };
 
 const displayList = (req, res) => {
     res.render('../view/show.ejs', {
-        bakeList: bakedGoods[req.params.id],
+        bakedGoods: bakedGoods[req.params.id],
     });
 };
 
@@ -32,7 +32,7 @@ const createPost = (req, res) => {
 const postData = (req, res) => {
     bakedGoods.push(req.body);
     console.log(bakedGoods);
-    res.redirect('/bakelist');
+    res.redirect('/bakedgoods');
 };
 
 module.exports = {

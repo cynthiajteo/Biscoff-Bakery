@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "start:dev":"nodemon server.js"
+    "start:dev": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +14,13 @@
     "express": "^4.16.3"
   },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cynthiajteo/biscoff-bakery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cynthiajteo/biscoff-bakery/issues"
+  },
+  "homepage": "https://github.com/cynthiajteo/biscoff-bakery#readme",
   "description": ""
 }
